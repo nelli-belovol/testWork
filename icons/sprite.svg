@@ -1,0 +1,19 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <symbol id="search"  viewBox="0 0 32 32">
+   <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+  </symbol>
+  <symbol  id="columns" viewBox="0 0 20 20">
+     <path d="M12 4h-4v12h4v-12zM14 4v12h4v-12h-4zM6 4h-4v12h4v-12zM0 2h20v16h-20v-16z"></path>
+  </symbol>
+  <symbol id="filter" viewBox="0 0 24 24">
+    <path d="M6 12.984v-1.969h12v1.969h-12zM3 6h18v2.016h-18v-2.016zM9.984 18v-2.016h4.031v2.016h-4.031z"></path>
+  </symbol>
+<symbol id="sort" viewBox="0 0 32 32">
+  <path d="M5.608 10.058v17.913h2.993v-17.913l3.186 4.389 2.422-1.76-7.105-9.784-7.105 9.784 2.422 1.76z"></path>
+  <path d="M26.392 21.942v-17.913h-2.993v17.913l-3.187-4.389-2.422 1.76 7.105 9.784 7.104-9.784-2.422-1.758z"></path>
+</symbol>
+
+</defs>
+</svg>
+
