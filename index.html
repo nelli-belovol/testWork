@@ -18,13 +18,13 @@
     <h2>Progress-bar</h2>
     <div class="progress-bar"><span class="progress-bar__indicator"></span></div>
     <h2>Table</h2>
-    <div class="table__container">
+    <div class="container">
       <div class="table__bar">
         <form class="table__filter">
           <svg width="18px" height="18px" class="icon">
             <use href="./icons/sprite.svg#search"></use>
           </svg>
-         
+
           <input
             class="table_filter-input"
             type="text"
@@ -36,42 +36,48 @@
           <label for="filter"></label>
         </form>
         <div class="table__changes">
-          <div>
-            <!-- <svg width="38px" height="32px" class="table__changes-icon">
-            <use href="./icons/sprite.svg#filter"></use>
-          </svg> -->
-            <span class="table__changes-text">Filter</span></div>
-          <div>
-            <!-- <svg width="32px" height="28px" class="table__changes-icon">
-            <use href="./icons/sprite.svg#columns"></use>
-          </svg> -->
-            <span class="table__changes-text">Columns</span></div>
-          <div>
-            <!-- <svg width="24px" height="24px" class="table__changes-icon">
-            <use href="./icons/sprite.svg#sort"></use>
-          </svg> -->
-          <span class="table__changes-text">Sort</span></div>
+          <button type="button">
+            <svg width="26px" height="26px" class="table__changes-icon">
+              <use href="./icons/sprite.svg#filter"></use>
+            </svg>
+            <span class="table__changes-text">Filter</span>
+          </button>
+          <button type="button">
+            <svg width="24px" height="24px" class="table__changes-icon">
+              <use href="./icons/sprite.svg#columns"></use>
+            </svg>
+            <span class="table__changes-text">Columns</span>
+          </button>
+          <button type="button">
+            <svg width="20px" height="20px" class="table__changes-icon">
+              <use href="./icons/sprite.svg#sort"></use>
+            </svg>
+            <span class="table__changes-text">Sort</span>
+          </button>
         </div>
 
-        <div class="button__else">...</div>
+        <button type="button" class="button__else">
+          <svg width="20px" height="20px" class="table__changes-icon">
+            <use href="./icons/sprite.svg#ellipsis"></use>
+          </svg>
+        </button>
       </div>
-
       <div class="table">
         <div class="table__header">
           <div class="select">
             <input type="checkbox" id="select" name="select" />
             <label for="select"></label>
           </div>
-          <div >Order</div>
-          <div >Date</div>
-          <div >Customer</div>
-          <div >Total</div>
-          <div >Payment Status</div>
-          <div >Fulfillment Status</div>
-          <div >Item</div>
-          <div >Delivery Method</div>
-          <div >Tags</div>  
-        </div>     
+          <div>Order</div>
+          <div>Date</div>
+          <div>Customer</div>
+          <div>Total</div>
+          <div>Payment Status</div>
+          <div>Fulfillment Status</div>
+          <div>Item</div>
+          <div>Delivery Method</div>
+          <div>Tags</div>
+        </div>
         <div class="line">
           <div class="select">
             <input type="checkbox" id="select" name="select" />
@@ -81,8 +87,18 @@
           <div class="date">Thursday at 02:38 pm</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;0.00</div>
-          <div class="payment"><div class="text__selection-grey"><div class="circle__grey"></div>Payd</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-grey">
+              <div class="circle__grey"></div>
+              Payd
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">1 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
@@ -96,8 +112,18 @@
           <div class="date">Thursday at 02:37 pm</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;0.00</div>
-          <div class="payment"><div class="text__selection-grey"><div class="circle__grey"></div>Payd</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-grey">
+              <div class="circle__grey"></div>
+              Payd
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">1 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
@@ -111,8 +137,18 @@
           <div class="date">Thursday at 02:35 pm</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;0.00</div>
-          <div class="payment"><div class="text__selection-grey"><div class="circle__grey"></div>Payd</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-grey">
+              <div class="circle__grey"></div>
+              Payd
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">1 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
@@ -126,8 +162,18 @@
           <div class="date">Thursday at 02:33 pm</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;0.00</div>
-          <div class="payment"><div class="text__selection-grey"><div class="circle__grey"></div>Payd</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-grey">
+              <div class="circle__grey"></div>
+              Payd
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">1 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
@@ -141,8 +187,18 @@
           <div class="date">Thursday at 02:30 pm</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;0.00</div>
-          <div class="payment"><div class="text__selection-grey"><div class="circle__grey"></div>Payd</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-grey">
+              <div class="circle__grey"></div>
+              Payd
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">1 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
@@ -156,8 +212,18 @@
           <div class="date">Wednesday at 11:37 am</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;11,111.00</div>
-          <div class="payment"><div class="text__selection-orange"><div class="circle__orange"></div>Payment pending</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Payment pending
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">2 item</div>
           <div class="delivery"></div>
           <div class="tag"><div class="text__selection-grey">333</div></div>
@@ -171,8 +237,18 @@
           <div class="date">Wednesday at 11:35 am</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;11,111.00</div>
-          <div class="payment"><div class="text__selection-orange"><div class="circle__orange"></div>Payment pending</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Payment pending
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">2 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
@@ -186,12 +262,23 @@
           <div class="date">Wednesday at 11:34 am</div>
           <div class="customer">No customer</div>
           <div class="total">&#8372;11,111.00</div>
-          <div class="payment"><div class="text__selection-orange"><div class="circle__orange"></div>Payment pending</div></div>
-          <div class="status"><div class="text__selection-orange"><div class="circle__orange"></div>Unfulfilled</div></div>
+          <div class="payment">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Payment pending
+            </div>
+          </div>
+          <div class="status">
+            <div class="text__selection-orange">
+              <div class="circle__orange"></div>
+              Unfulfilled
+            </div>
+          </div>
           <div class="item">2 item</div>
           <div class="delivery"></div>
           <div class="tag"></div>
         </div>
-      </div>   
+      </div>
+    </div>
   </body>
 </html>
