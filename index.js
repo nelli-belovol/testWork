@@ -1,1 +1,1 @@
-import './js/getNatural.js'
+import './js/index.js'

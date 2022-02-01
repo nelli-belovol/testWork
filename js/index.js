@@ -31,7 +31,6 @@ function findNum(string) {
   let arr = string.split(' ')
   let numbers = []
   arr.forEach(item => {
-    //ПОСМОТРЕТЬ ЧЕРЕЗ ФИЛЬТР
     const num = Number(item)
     if (!isNaN(num)) {
       numbers.push(num)
@@ -107,54 +106,3 @@ console.log('Результат задания e:', rezult())
 // Задано количество одновременно выполняемых запросов.
 // В качестве запросов использовать Promise которые резолвятся через случайное время.
 // Пример ниже можно доработать как Вы решите.
-
-const randomIntegerFromInterval = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
-class ConcurencyQueue {
-  constructor(concurency) {
-    this.concurency = concurency
-    this.currQuaReq = 0
-  }
-
-  //встать в очередь
-  queue(requestId) {
-    const delay = randomIntegerFromInterval(1000, 3000)
-
-    console.log(`Транзакция ${requestId} встала в очередь`)
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        this.currQuaReq += 1
-        if (this.currQuaReq < 3) {
-          resolve(requestId)
-        }
-        reject(requestId)
-      })
-    }, delay)
-  }
-
-  //удалить из очереди после выполнения
-  deQueue(requestId) {
-    console.log(`Транзакция ${requestId} удалена из очереди после выполнения`)
-    return
-  }
-
-  //Обработка очереди
-  queuing(requestId) {
-    console.log(`Транзакция ${requestId} обработана`)
-    return
-  }
-}
-
-// const promise = new Promise(resolve => {
-//   setTimeout(() => resolve(`Создан промис `), Math.ceil(Math.random() * (5000 - 1000) + 1000))
-// })
-
-const concQueue = new ConcurencyQueue(3)
-const ReqId1 = concQueue.queue({ id: 1 })
-const ReqId2 = concQueue.queue({ id: 2 })
-const ReqId3 = concQueue.queue({ id: 3 })
-const ReqId4 = concQueue.queue({ id: 4 })
-
-concQueue.queuing(ReqId1, ReqId2, ReqId3, ReqId4)
